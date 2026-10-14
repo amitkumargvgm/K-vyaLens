@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sanskrit: 'Noto Serif Devanagari', 'Cormorant Garamond', Georgia, serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.font-sanskrit {
+  font-family: 'Noto Serif Devanagari', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-classical {
+  font-family: 'Cinzel', serif;
+}
+
+/* Custom sleek scrollbar for light and dark */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+  border: 1px solid #334155;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #D97706;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+  border: 1px solid #94A3B8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B45309;
+}
+
+/* Gentle text glow for classical Devanagari highlights */
+.dark .text-glow-amber {
+  text-shadow: 0 0 16px rgba(245, 158, 11, 0.25);
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 12px rgba(217, 119, 6, 0.2);
+}

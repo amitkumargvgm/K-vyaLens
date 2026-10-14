@@ -1,0 +1,6 @@
+{
+  "name": "KāvyaLens — Sanskrit Literary Intelligence Platform",
+  "description": "Sanskrit literary criticism, meter scanning, grammar, and poetics analysis platform. Developed by Amit Kumar AKS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
